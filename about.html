@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="custom-elements.js"></script>
+    <style>
+        .bordered {
+            border: 1px solid #ccc;
+        }
+        
+        interest-card {   
+          display: block;
+          width: 300px;
+          height: 410px;
+          margin: 12px;
+          padding: 12px;
+          border: 2px solid #ccc;
+          border-radius: 8px;
+          text-align: center;
+        }
+        
+        interest-card img { 
+          width: 80%;
+          height: 70%;
+          border-radius: 4px;
+          object-fit: cover;
+          object-fit: cover;
+          display: block;
+          margin: 0 auto 10px auto;
+        }
+
+        interest-card[type="soccer"]     { background:#e8f4e8; }
+        interest-card[type="basketball"] { background:#f4e8e8; }
+        interest-card[type="travel"]     { background:#e8e8f4; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Background</h2>
+            <p>I'm a passionate student pursuing a degree in Computer Science at UC San Diego.</p>
+            
+            <article>
+                <h3>Education</h3>
+                <p>Bachelor of Science in Computer Science<br>
+                University of California, San Diego</p>
+            </article>
+            
+            <article>
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+                <p>My focus areas include <i>web development</i>, <i>data structures</i>, and <i>algorithms</i>.</p>
+            </article>
+        </section>
+        
+        <section>
+            <h2>Interests</h2>
+            <p>Outside of academics, I enjoy:</p>
+            
+            <interest-card 
+                type="soccer" 
+                title="Soccer" 
+                description="Playing and watching soccer matches" 
+                image="ckcfc.jpg" 
+                alt="Soccer match">
+                <h2>Soccer</h2>
+                <img src="ckcfc.jpg" alt="Soccer match">
+                <p>Playing and watching soccer matches</p>
+            </interest-card>
+            
+            <interest-card 
+                type="basketball" 
+                title="Basketball" 
+                description="Playing basketball with friends and watching NBA games" 
+                image="basketball.jpg" 
+                alt="Basketball game">
+                <h2>Basketball</h2>
+                <img src="basketball.jpg" alt="Basketball game">
+                <p>Playing basketball with friends and watching NBA games</p>
+            </interest-card>
+            
+            <interest-card 
+                type="travel" 
+                title="Travel" 
+                description="Exploring new places and experiencing different cultures" 
+                image="travel.jpg" 
+                alt="Travel destinations">
+                <h2>Travel</h2>
+                <img src="travel.jpg" alt="Travel destinations">
+                <p>Exploring new places and experiencing different cultures</p>
+            </interest-card>
+            
+        </section>
+        
+        <section>
+            <h2>My Hometown</h2>
+            <p>I'm originally from the area shown in the map below:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d1851.8357187334477!2d120.01185497348796!3d30.21478567241065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d30.215154204682104!2d120.01101007768608!5e1!3m2!1sen!2sus!4v1760911214576!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <!-- need js to make this work -->
+        <button>Contact Me</button>
+        <dialog >
+            <p>Contact form would appear here</p> 
+        </dialog>
+    </footer>
+
+    <hello-world-console></hello-world-console>
+
+    <noscript>
+        <p>This site works best with JavaScript enabled.</p>
+    </noscript>
+</body>
+</html>

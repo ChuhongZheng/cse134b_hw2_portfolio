@@ -11,29 +11,29 @@ In this section you will build out a valid semantic and structural HTML-only sit
 **Your site must contain all the following tags** (**43 tags \* 2 = 86 pts**)**
 **[The items with a * and *italics* have notes to read below.] 
 
-| html      | b        |
-| --------- | -------- |
-| head      | i        |
-| title     | strong   |
-| meta      | em       |
-| link      | a        |
-| *script** | img      |
-| *style**  | picture  |
-| body      | iframe   |
-| main      | *svg**   |
-| h1        | ul       |
-| h2        | ol       |
-| h3        | li       |
-| p         | form     |
-| section   | label    |
-| header    | fieldset |
-| footer    | legend   |
-| nav       | input    |
-| div       | textarea |
-| span      | article  |
-| br        | progress |
-| *button** | dialog   |
-| noscript  |          |
+| html      | b            |
+| --------- | ------------ |
+| head      | i            |
+| title     | strong       |
+| meta      | ==em==       |
+| link      | a            |
+| *script** | img          |
+| *style**  | picture      |
+| body      | iframe       |
+| main      | *svg**       |
+| h1        | ul           |
+| h2        | ol           |
+| h3        | li           |
+| p         | ==form==     |
+| section   | label        |
+| header    | fieldset     |
+| footer    | legend       |
+| nav       | input        |
+| ==div==   | ==textarea== |
+| ==span==  | article      |
+| br        | progress     |
+| *button** | dialog       |
+| noscript  |              |
 
 **Additionally you must create two custom elements. Both should be named based on the guidelines below**
 
@@ -65,7 +65,7 @@ In this section you will build out a valid semantic and structural HTML-only sit
 
 ### Other grading points and details
 
-- Validation (8 pts). 
+- ==Validation (8 pts).== 
 
   There are two ways to get the full credit:
 
@@ -82,7 +82,7 @@ In this section you will build out a valid semantic and structural HTML-only sit
 
 Make sure to host your site on Netlify hosting and provide a link to it in the Part 1 pdf submission.
 
- 
+==下面这些== 
 
 ```
 <style> 

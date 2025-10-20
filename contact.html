@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="custom-elements.js"></script>
+    <style>
+        .bordered {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out to me through any of the following methods:</p>
+            
+            <article>
+                <h3>Email</h3>
+                <p>You can email me at: <a href="mailto:c5zheng@ucsd.edu">c5zheng@ucsd.edu</a></p>
+            </article>
+            
+            <article>
+                <h3>Address</h3>
+                <p>
+                    3969 Miramar St<br>
+                    La Jolla, CA 92037<br>
+                    US<br>
+                    Nuevo East CAPA #0906
+                </p>
+            </article>
+            
+            <article>
+                <h3>Social Media</h3>
+                <p>Connect with me on:</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/zheng647/?locale=en_US">LinkedIn</a> (<i>Professional networking</i>)</li>
+                    <li><a href="https://github.com/ChuhongZheng">GitHub</a> (<i>Code collaboration</i>)</li>
+                    <li><a href="https://x.com/zhengchuhong134">Twitter</a> (<i>Quick updates</i>)</li>
+                </ul>
+            </article>
+        </section>
+        
+        <section>
+            <h2>Send a Message</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="1" cols="40"></textarea>
+                    
+                    <input type="submit" value="Send Message">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <hello-world-console></hello-world-console>
+
+    <noscript>
+        <p><strong>This site works best with JavaScript enabled.</strong></p>
+    </noscript>
+</body>
+</html>

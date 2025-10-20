@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="custom-elements.js"></script>
+    <style>
+        /* 只使用border属性来设置基础结构 */
+        .bordered {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to My Portfolio</h2>
+            <p>This is my <em>personal portfolio website</em> showcasing my projects and skills.</p>
+            
+            <article>
+                <h3>Featured Project</h3>
+                <p>Check out my latest project that demonstrates my skills and expertise.</p>
+            </article>
+        </section>
+        
+        <section>
+            <h2>About Me</h2>
+            <img src="real.jpg" width="200" height="200" alt="me">
+            <svg width="50" height="50" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="yellow" />
+                <circle cx="35" cy="40" r="5" fill="black" />
+                <circle cx="65" cy="40" r="5" fill="black" />
+                <path d="M 30 65 Q 50 85 70 65" stroke="black" stroke-width="3" fill="none" />
+            </svg>
+            <p>I'm a student studying Computer Science at <b>UC San Diego</b>.</p>
+            <p>In my free time, I enjoy coding, reading and learning new technologies.</p>
+            <p>I have knowledge in various programming languages including <i>Python</i>, <i>JavaScript</i>, and <i>Java</i>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <div class="social-links">
+            <span>Follow me on:</span>
+            <a href="https://x.com/zhengchuhong134">Twitter</a>
+            <a href="https://www.linkedin.com/in/zheng647/?locale=en_US">LinkedIn</a>
+            <a href="https://github.com/ChuhongZheng">GitHub</a>
+        </div>
+    </footer>
+
+    <!-- 自定义元素示例 -->
+    <hello-world-console></hello-world-console>
+
+    <!-- MathML 公式 (Extra Credit) -->
+    <p>Einstein's famous equation: 
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>E</mi>
+            <mo>=</mo>
+            <mi>m</mi>
+            <msup>
+                <mi>c</mi>
+                <mn>2</mn>
+            </msup>
+        </math>
+    </p>
+
+    <noscript>
+        <p><strong>This site works best with JavaScript enabled.</strong></p>
+    </noscript>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="custom-elements.js"></script>
+    <style>
+        .bordered {
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Experiments</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>HTML5 Elements Showcase</h2>
+            
+            <article>
+                <h3>Template Element</h3>
+                <p>The <i>template</i> element holds client-side content that is not displayed when the page loads:</p>
+                <template id="myTemplate">
+                    <p>This content is hidden inside the template.</p>
+                    <img src="template.jpg" alt="Template image">
+                </template>
+            </article>
+            
+            <article>
+                <h3>Picture Element</h3>
+                <p>The <i>picture</i> element offers different image sources for different screen sizes:</p>
+                <picture>
+                    <source media="(min-width: 650px)" srcset="large.jpg">
+                    <source media="(min-width: 465px)" srcset="mid.jpg">
+                    <img src="small.jpg" alt="Responsive image" >
+                </picture>
+            </article>
+            
+            <article>
+                <h3>Audio Element</h3>
+                <p>Embed <i>audio</i> content in the page:</p>
+                <audio controls>
+                    <source src="sample-audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+            
+            <article>
+                <h3>Video Element</h3>
+                <p>Embed <i>video</i> content in the page:</p>
+                <video width="320" height="240" controls>
+                    <source src="sample-video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </article>
+            
+            <article>
+                <h3>Canvas Element</h3>
+                <p><i>Canvas</i> for drawing graphics via JavaScript:</p>
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+                    Your browser does not support the canvas element.
+                </canvas>
+                <script>
+                    // Minimal JavaScript to demonstrate canvas usage
+                    var canvas = document.getElementById("myCanvas");
+                    var ctx = canvas.getContext("2d");
+                    ctx.fillStyle = "#FF0000";
+                    ctx.fillRect(0, 0, 50, 50);
+                </script>
+            </article>
+            
+            <article>
+                <h3>Source Element</h3>
+                <p>Multiple <i>source</i> elements for media elements:</p>
+                <video width="320" height="240" controls>
+                    <source src="sample-video.webm" type="video/webm">
+                    <source src="sample-video.mp4" type="video/mp4">
+                    <source src="sample-video.ogg" type="video/ogg">
+                    Your browser does not support the video element.
+                </video>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <hello-world-console></hello-world-console>
+
+    <noscript>
+        <p><strong>This site works best with JavaScript enabled.</strong></p>
+    </noscript>
+</body>
+</html>
